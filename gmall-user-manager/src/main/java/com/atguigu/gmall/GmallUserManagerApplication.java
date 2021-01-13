@@ -8,11 +8,9 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @MapperScan("com.atguigu.gmall.mapper")
-@ComponentScan("com.atguigu")
 public class GmallUserManagerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GmallUserManagerApplication.class, args);
 	}
-
 }

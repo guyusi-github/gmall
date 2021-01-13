@@ -2,7 +2,7 @@ package com.atguigu.gmall.Contrller;
 
 
 import com.atguigu.gmall.bean.UserInfo;
-import com.atguigu.gmall.service.Userservice;
+import com.atguigu.gmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +15,8 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    Userservice userService;
+    UserService userService;
+
     @RequestMapping(value="findAll",method = RequestMethod.GET)
     @ResponseBody
     public List<UserInfo> findAll(){
